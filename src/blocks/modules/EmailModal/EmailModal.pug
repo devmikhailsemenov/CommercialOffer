@@ -1,0 +1,13 @@
+mixin EmailModal()
+	+Modal({ className: 'email-popup', id: 'popup-email' })
+		h2.popup__title.section-title Отправить на почту
+		form.popup__form(id='popup-email-form')
+			+FieldText({
+				className: 'popup__field-wrap',
+				label: 'Введите email',
+				id: 'popup-email-field',
+				name: 'email',
+				required: true
+			})
+			.popup__form-btn-wrap
+				button.popup__form-btn.btn-main(type='submit') Отправить

@@ -1,0 +1,7 @@
+mixin Modal({ id, className })
+	- const classes = className ? `${className} popup box-hidden` : 'popup box-hidden'
+
+	div(class= classes id= id)
+		span.popup__close-btn.popup-close
+
+		block

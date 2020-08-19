@@ -1,0 +1,17 @@
+mixin Header()
+	header.header.body-hidden-elem
+		+ProgressBar()
+		.container.container_max
+			.header__row
+				.header__logo-wrap
+					a.header__logo.logo(href='#')
+						img.logo__img(src='img/logo/logo.svg' alt='Логотип')
+				+Navbar('header')
+				.header__btns-wrap
+					button.header__btn.header__btn_mail.btn-circle(data-modal='popup-email')
+						span.header__btn-descr Получить на почту
+						include ../../../img/sprite/mail.svg
+
+  		
+
+
